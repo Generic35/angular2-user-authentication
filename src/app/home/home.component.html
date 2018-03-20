@@ -9,7 +9,8 @@
     <li>Make requests for server resources protected by JWT middleware on the server</li>
     <li>Make requests for server resources that require a specific <code>scope</code> to be present in the JWT payload</li>
   </ul>
-
-  <p><a class="btn btn-primary btn-lg" routerLink="/login" role="button">Log In</a></p>
-  <p><a class="btn btn-primary btn-lg" (click)="auth.logout()" role="button">Log Out</a></p>
+       
+  <button class="btn btn-primary" [routerLink]="['/login']">Log In</button>
+  <button class="btn btn-secondary" (click)="logout()">Log Out</button>   
+  <!-- create buttons for Log In and Log Out -->
 </div>
